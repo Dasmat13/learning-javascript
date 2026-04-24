@@ -14,11 +14,22 @@ accountPassword = "87643"
 accountCity = "varanasi"
 
 console.log(accountId);
+/*
+34571
+*/
+
 console.log(accountEmail);
+/*
+sunny.lpu.in
+*/
 
 //to print all the things in table we use console.table([])
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
-rkgnnvrgg lmg'
-sdfmg; '
-vbml;ncvl;dfbm '
-dfgvbml; v'functionalb ''
+/*
+(index)  Values
+0        34571
+1        sunny.lpu.in
+2        87643
+3        varanasi
+4        undefined
+*/

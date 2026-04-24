@@ -33,6 +33,7 @@
 //     name1: "dasmat"
 //     age: 22
 // }
+<<<<<<< HEAD
 
 
 // const myFunction = function (){
@@ -57,10 +58,31 @@ let userone = {
     email: "user@google.com",
     upi: "user@ybl"
 }
+=======
+>>>>>>> 19d8464 (save my local changes)
 
 let usertwo = userone
 
+<<<<<<< HEAD
 usertwo.email = "yoyyo@gmsail.com"
 
 console.log(userone.email)
 console.log(usertwo.email)
+=======
+// const myFunction = function (){
+//     console.log("hello Dasmat")
+// }
+
+ //---------------------------------------------------------------------
+
+ /*
+ 
+ stack(primitive) , heap(non-primitive)
+ */
+let myname = "dasmathansd000a"
+let anothername = myname
+anothername = "boboobo"
+
+console.log(myname)
+console.log(anothername)
+>>>>>>> 19d8464 (save my local changes)
