@@ -1,7 +1,4 @@
 node_modules/
-.terraform/
-*.tfstate
-*.tfstate.backup
-.env
-Downloads/
-KubeShare/
+package-lock.json
+.DS_Store
+*.log
