@@ -6,20 +6,17 @@
 const arr = [1,2,3,4,5,6,7,8,9]
 
 for (const i of arr) {
-    console.log(i);
-    
+    console.log(i); // Output: 1, 2, 3, 4, 5, 6, 7, 8, 9
 }
 console.log("----------------------------------------------------------");
 for (const key in arr ) {    
-    console.log(key);
-    
+    console.log(key); // Output: 0, 1, 2, 3, 4, 5, 6, 7, 8 (indexes of the array)
 }
 console.log("----------------------------------------------------------");
 
 const greeting = "hello world!"
 for(const greet of greeting){
-    console.log(`each char ${greet}`);
-    
+    console.log(`each char ${greet}`); // Output: each char h, each char e...
 }
 
 console.log("----------------------------------------------------------");
@@ -35,15 +32,14 @@ map.set('USA',"USA")
 map.set('FR',"france")
 map.set('FR',"france")
 
-console.log(map);
+console.log(map); // Output: Map(3) { 'IN' => 'India', 'USA' => 'USA', 'FR' => 'france' } (Notice 'FR' is not duplicated)
 console.log("----------------------------------------------------------");
 for (const key of map) {
-    console.log(key);
+    console.log(key); // Output: [ 'IN', 'India' ], [ 'USA', 'USA' ], [ 'FR', 'france' ]
 }
 console.log("----------------------------------------------------------");
 for (const [key, value] of map) {
-    console.log(key,":-",value);
-    
+    console.log(key,":-",value); // Output: IN :- India, USA :- USA, FR :- france
 }
 console.log("----------------------------------------------------------");
 
@@ -63,8 +59,7 @@ const myObj = {
 }
 
 for (const key in myObj) {
-    console.log(`${key} shortcut of ${myObj[key]}`);
-    
+    console.log(`${key} shortcut of ${myObj[key]}`); // Output: js shortcut of javascript, etc.
 }
 console.log("---------------------------------------------------------");
 
@@ -73,13 +68,11 @@ console.log("---------------------------------------------------------");
 const pro = ["java","cpp","ruby","python","js"]
 
 for (const key in pro) {
-    console.log(`${key} of ${pro[key]}`);
-    
+    console.log(`${key} of ${pro[key]}`); // Output: 0 of java, 1 of cpp, etc.
 }
 console.log("----------------------------------------------------------");
 for (const key in map) {
-    console.log(key);
-    
+    console.log(key); // Output: (Nothing! Maps cannot be iterated with for...in)
 }
 console.log("----------------------------------------------------------");
 
