@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM edit & remove </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("cpp")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    //edit
+     const secondLang = document.querySelector("li:nth-child(2)")
+     //secondLang.innerHTML = "mojo"
+     const newli = document.createElement('li')
+     newli.textContent = "mojo"
+     secondLang.replaceWith(newli)
+    
+     const cpplang = document.querySelector("li:nth-child(3)")
+     cpplang.style.color = 'yellow'
+     cpplang.style.padding = '2px'
+     cpplang.style.margin = '5px'
+     cpplang.style.backgroundColor = 'blue'
+
+
+
+     const alllang = document.querySelectorAll('li')
+     alllang.forEach( (ww) => {
+        ww.style.backgroundColor = 'teal'
+        ww.style.borderTop = '20px'
+        ww.style.borderRadius = '20px'
+        ww.style.padding = '3px'
+        ww.style.paddingBottom = '3px'
+     })
+
+     //edit 
+
+     const firstlang = document.querySelector("li:nth-child(1)")
+     const newFirst = document.createElement('li')
+     newFirst.textContent = "typescript"
+     firstlang.replaceWith(newFirst)
+
+     //edit 
+
+     const lastLAnng = document.querySelector("li:last-child")
+    // lastLAnng.outerHTML = "<h1>java</h1>"
+     lastLAnng.remove()
+
+</script>
+</html>
