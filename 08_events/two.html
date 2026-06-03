@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <button id="d">stop</button>
+</body>
+<script>
+    const myName = function(){
+        console.log("dasmat hyyy");
+    }
+    
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = " hello world"
+    }
+    const changeME =setTimeout(changeText, 2000)
+    document.querySelector('#d').
+    addEventListener('click', function(){
+        clearTimeout(changeME)
+        console.log("STOPPED")
+    })
+</script>
+</html>
